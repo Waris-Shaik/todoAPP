@@ -39,7 +39,7 @@ const Login = () => {
       <section>
         <form onSubmit={submitHandler}  autoComplete="on">
           <input type="email" placeholder="Email" value={email} onChange={(e)=> setEmail(e.target.value)} required></input>
-          <input type="password" placeholder="Passworrd" value={password} onChange={(e)=> setPassword(e.target.value)}  required></input>
+          <input type="password" placeholder="Password" value={password} onChange={(e)=> setPassword(e.target.value)}  required></input>
           <button disabled={loading} type="submit">Log in</button>
           <h4>Or</h4>
           <Link to = '/register'>Sign up</Link>
